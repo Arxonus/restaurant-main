@@ -1,0 +1,41 @@
+MY-RESTAURANT-APP
+├── backend              ➔ Κώδικας backend (Node.js + Express)
+│   ├── api              ➔ Φάκελος API (controllers, routes, middleware)
+│   │   ├── controllers  ➔ Ελεγκτές (π.χ., register, login, bookings)
+│   │   │   ├── userController.js
+│   │   │   ├── restaurantController.js
+│   │   │   ├── bookingController.js
+│   │   ├── middleware   ➔ Μεσαίο λογισμικό (π.χ., έλεγχος authentication)
+│   │   │   ├── authMiddleware.js
+│   │   ├── routes       ➔ Διαδρομές API (endpoints)
+│   │   │   ├── userRoutes.js
+│   │   │   ├── restaurantRoutes.js
+│   │   │   ├── bookingRoutes.js
+│   │   ├── services     ➔ Υπηρεσίες (σύνδεση βάσης δεδομένων)
+│   │       ├── db.js
+│   ├── config           ➔ Ρυθμίσεις εφαρμογής
+│   │   ├── database.js
+│   │   ├── secrets.js
+│   ├── app.js           ➔ Κεντρικό αρχείο εφαρμογής backend
+│   ├── package.json     ➔ Εξαρτήσεις backend
+│
+├── mobile               ➔ Κώδικας frontend (React Native)
+│   ├── App.js
+│   ├── package.json
+│   ├── screens          ➔ Οθόνες εφαρμογής (screens)
+│   │   ├── Login.js
+│   │   ├── Register.js
+│   │   ├── RestaurantList.js
+│   │   ├── Booking.js
+│   │   ├── Profile.js
+│   ├── components       ➔ Κοινά components (κουμπιά, headers κλπ.)
+│       ├── Header.js
+│       ├── Footer.js
+│
+├── database             ➔ Αρχεία βάσης δεδομένων
+│   ├── init.sql
+│
+├── README.md            ➔ Περιγραφή έργου (οδηγίες εγκατάστασης)
+│
+└── docs                 ➔ Φάκελος τεκμηρίωσης
+    ├── project-presentation.pptx
